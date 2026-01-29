@@ -27,17 +27,17 @@ export default function Register() {
         
         {/* #212738 */}
         <div className='flex justify-around'>
-          <nav className='font-bold min-w-60 max-h-80 overflow-y-auto p-10 pt-0 text-lg bg-[#212738] m-10 mt-0 mr-10 -pt-5 rounded-md self-start
-          sticky top-10 w-1/4 max-h-[calc(60vh-5rem)] overflow-y-auto hidden md:block
+          <nav className='font-bold min-w-70 max-h-80 overflow-y-auto pt-0 text-lg bg-[#212738] m-10 mt-0 mr-10 -pt-5 rounded-md self-start
+          sticky top-10 w-1/4 max-h-[calc(60vh-5rem)] hidden md:block
   
   [&::-webkit-scrollbar]:w-2
   [&::-webkit-scrollbar-track]:bg-[#212738]
   [&::-webkit-scrollbar-thumb]:bg-gray-500
   [&::-webkit-scrollbar-thumb]:rounded-full
   '>
-              <p className="flex justify-center sticky bg-[#212738] p-5 top-0 w-40 m-0 ">Navigation</p>
+              <p className="flex justify-center sticky bg-[#212738] p-5 pl-20 pr-20 top-0 w-full m-0 ">Navigation</p>
               <br />
-              <ul className=' [&_li]:mb-2 text-sm/6 [&_li]:hover:bg-[#181d29] [&_li]: [&_li]:rounded-md [&_li]:mb-1 list-disc list-outside  [&_li]:transition [&_li]:duration-100 [&_li]:ease-linear'>
+              <ul className='pl-10 pr-10 [&_li]:mb-2 text-sm/6 [&_li]:hover:bg-[#181d29] [&_li]: [&_li]:rounded-md [&_li]:mb-1 list-disc list-outside  [&_li]:transition [&_li]:duration-100 [&_li]:ease-linear'>
                   <a href="#p1"><li>นโยบายความเป็นส่วนตัว</li></a>
                   <a href="#p2"><li>การเก็บรวบรวมข้อมูลส่วนบุคคล</li></a>
                   <a href="#p3"><li>ประเภทข้อมูลส่วนบุคคลที่เก็บรวบรวม</li></a>
