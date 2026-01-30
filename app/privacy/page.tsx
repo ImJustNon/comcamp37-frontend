@@ -4,7 +4,8 @@ export default function Register() {
     return (
       <>
       <div className='w-full h-full bg-[#2D364E] text-white scroll-smooth'>
-        <div className='flex justify-center'>
+        <div className='bg-[#212738] flex justify-center font-bold py-8 sticky top-0 z-1'>banner</div>
+        <div className='flex justify-center '>
             <div className='w-full flex flex-col items-center justify-center font-bold text-5xl pt-16 pb-3 bg-[#212738]'>
             Privacy Policy <br />
             <span className='text-sm mt-5 opacity-40 justify-start'>Last updated: 26/01/2026</span>
@@ -27,17 +28,17 @@ export default function Register() {
         
         {/* #212738 */}
         <div className='flex justify-around'>
-          <nav className='font-bold min-w-70 max-h-80 overflow-y-auto pt-0 text-lg bg-[#212738] m-10 mt-0 mr-10 -pt-5 rounded-md self-start
-          sticky top-10 w-1/4 max-h-[calc(60vh-5rem)] hidden md:block
+          <nav className=' font-bold min-w-70 max-h-80 overflow-y-auto pt-0 text-lg bg-[#212738] m-10 mt-0 mr-10 -pt-0 rounded-md self-start
+          sticky top-24 w-1/4 max-h-[calc(60vh-5rem)] hidden md:block
   
   [&::-webkit-scrollbar]:w-2
   [&::-webkit-scrollbar-track]:bg-[#212738]
   [&::-webkit-scrollbar-thumb]:bg-gray-500
   [&::-webkit-scrollbar-thumb]:rounded-full
   '>
-              <p className="flex justify-center sticky bg-[#212738] p-5 pl-20 pr-20 top-0 w-full m-0 ">Navigation</p>
+              <p className="flex justify-center bg-[#212738] p-5 px-20 top-0 w-full m-0 ">Navigation</p>
               <br />
-              <ul className='pl-10 pr-10 [&_li]:mb-2 text-sm/6 [&_li]:hover:bg-[#181d29] [&_li]: [&_li]:rounded-md [&_li]:mb-1 list-disc list-outside  [&_li]:transition [&_li]:duration-100 [&_li]:ease-linear'>
+              <ul className='pl-10 pr-10 [&_li]:mb-2 text-sm/6 [&_li]:hover:bg-[#181d29] [&_li]:h-12 [&_li]:rounded-md [&_li]:mb-1 list-disc list-outside  [&_li]:transition [&_li]:duration-100 [&_li]:ease-linear'>
                   <a href="#p1"><li>นโยบายความเป็นส่วนตัว</li></a>
                   <a href="#p2"><li>การเก็บรวบรวมข้อมูลส่วนบุคคล</li></a>
                   <a href="#p3"><li>ประเภทข้อมูลส่วนบุคคลที่เก็บรวบรวม</li></a>
@@ -54,11 +55,11 @@ export default function Register() {
                   
               </ul>
           </nav>
-          <div className='[&_section]:scroll-mt-16 [&_span]:text-xl/12 [&_span]:font-bold [&_span]:-ml-6 [&_span]:inline-block [&_span]:indent-0
-           [&_ul]:list-disc [&_ul]:list-outside [&_ul]:ml-4 [&_ul]:ml-16 [&_p]:ml-2 px-8 text-base/8 pb-10 [&_p:not(.ignores)]:indent-8'>
+          <div className='[&_section]:scroll-mt-24 [&_span]:text-xl/12 [&_span]:font-bold [&_span]:-ml-6 [&_span]:inline-block [&_span]:indent-0
+           [&_ul]:list-disc [&_ul]:list-outside [&_ul]:ml-4 [&_ul]:ml-16 [&_p]:ml-2 pl-8 pr-12 text-base/8 pb-10 [&_p:not(.ignores)]:indent-8'>
             <section id="p1">
               <span>1. นโยบายความเป็นส่วนตัว</span><br />
-                <p>โครงการฝึกอบรมเชิงปฏิบัติการคอมพิวเตอร์ ครั้งที่ 36 ให้ความสําคัญกับการคุ้มครองข้อมูลส่วนบุคคลของคุณ
+                <p>โครงการฝึกอบรมเชิงปฏิบัติการคอมพิวเตอร์ ครั้งที่ 37 ให้ความสําคัญกับการคุ้มครองข้อมูลส่วนบุคคลของคุณ
               โดยนโยบายความเป็นส่วนตัวฉบับนี้ได้อธิบายแนวปฏิบัติเกี่ยวกับการเก็บรวบรวม ใช้ หรือ เปิดเผยข้อมูลส่วนบุคคลรวมถึงสิทธิต่าง ๆ
               ของเจ้าของข้อมูลส่วนบุคคล ตามกฎหมายคุ้มครองข้อมูลส่วนบุคคล</p>
             </section>
@@ -158,7 +159,6 @@ export default function Register() {
             </footer>
           </div>
         </div>
-        <button className="rounded-md bg-[#212738]">ย้อนกลับ</button>
       </div>
     </>
     );
