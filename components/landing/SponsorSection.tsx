@@ -6,7 +6,7 @@ import * as React from "react";
 
 function SponsorSection() {
     return (
-        <div className='w-full flex flex-col justify-center items-center align-middle'>
+        <div className='w-full flex flex-col md:min-h-screen justify-center items-center align-middle'>
             <div className="w-full max-w-[1600px] flex flex-col">
                 <div className="flex flex-row align-middle justify-center items-center gap-10">
                     <svg width="500" height="5" viewBox="0 0 500 5" fill="none" xmlns="http://www.w3.org/2000/svg">

@@ -34,8 +34,8 @@ const InfiniteCarousel = () => {
     return (
         <div className="w-full relative overflow-hidden py-3 border-t-7 border-b-7 border-theme-secondary">
             <div className="absolute w-full h-full flex flex-row justify-between z-30">
-                <div className="bg-linear-to-r from-theme-secondary to-transparent to-50% h-full aspect-square"></div>
-                <div className="bg-linear-to-l from-theme-secondary to-transparent to-50% h-full aspect-square"></div>
+                <div className="bg-linear-to-r from-theme-secondary to-transparent to-50% h-full aspect-square absolute"></div>
+                <div className="bg-linear-to-l from-theme-secondary to-transparent to-50% h-full aspect-square right-0 absolute"></div>
             </div>
             <div className="space-y-4">
 

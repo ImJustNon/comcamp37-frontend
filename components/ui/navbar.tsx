@@ -9,7 +9,7 @@ function Navbar() {
     const pathname = usePathname();
     const isLandingPage = pathname === '/';
     return (
-        <div className={`p-3 top-0 w-full ${isLandingPage ? 'fixed' : 'sticky'} flex justify-center font-zootopia z-50`}>
+        <div className={`p-3 top-0 w-full ${isLandingPage ? 'fixed' : 'sticky'} flex justify-center font-zootopia z-1000`}>
             <nav className="
                 flex flex-row h-17 w-full max-w-[1671px] justify-between items-center pl-8
                 rounded-4xl overflow-hidden
@@ -32,16 +32,23 @@ function Navbar() {
                         />
                     </div>
                 </div>
-                <div className="flex flex-2 flex-row gap-x-5 justify-between font-bold text-lg pt-1">
-                    <button className="cursor-pointer text-white transition-all duration-300 hover:[text-shadow:_0_0_20px_rgba(235,139,81,0.7)]">About</button>
-                    <button className="cursor-pointer text-white transition-all duration-300 hover:[text-shadow:_0_0_20px_rgba(235,139,81,0.7)]">Learning</button>
-                    <button className="cursor-pointer text-white transition-all duration-300 hover:[text-shadow:_0_0_20px_rgba(235,139,81,0.7)]">Condition</button>
-                    <button className="cursor-pointer text-white transition-all duration-300 hover:[text-shadow:_0_0_20px_rgba(235,139,81,0.7)]">Timeline</button>
-                    <button className="cursor-pointer text-white transition-all duration-300 hover:[text-shadow:_0_0_20px_rgba(235,139,81,0.7)]">Contact</button>
+                <div className="flex-2 flex-row gap-x-5 justify-between font-bold xl:text-lg pt-1 hidden lg:flex">
+                    <a className="cursor-pointer text-white transition-all duration-300 hover:[text-shadow:_0_0_20px_rgba(235,139,81,0.7)]" href={`#about`}>About</a>
+                    <a className="cursor-pointer text-white transition-all duration-300 hover:[text-shadow:_0_0_20px_rgba(235,139,81,0.7)]" href={`#learning`}>Learning</a>
+                    <a className="cursor-pointer text-white transition-all duration-300 hover:[text-shadow:_0_0_20px_rgba(235,139,81,0.7)]" href={`#condition`}>Condition</a>
+                    <a className="cursor-pointer text-white transition-all duration-300 hover:[text-shadow:_0_0_20px_rgba(235,139,81,0.7)]" href={`#timeline`}>Timeline</a>
+                    <a className="cursor-pointer text-white transition-all duration-300 hover:[text-shadow:_0_0_20px_rgba(235,139,81,0.7)]" href={`#contact`}>Contact</a>
                 </div>
-                <div className="flex-1 flex flex-row justify-end h-full pr-2 py-2 text-lg">
-                    <button className="cursor-pointer font-bold px-8 pt-1 bg-transparent transition-all duration-400 border border-white h-full rounded-2xl hover:bg-white hover:text-black">
+                <div className="flex-1 flex-row justify-end h-full pr-2 py-2 xl:text-lg hidden lg:flex">
+                    <button className="cursor-pointer font-bold px-6 xl:px-8 pt-1 bg-transparent transition-all duration-400 border border-white h-full rounded-2xl hover:bg-white hover:text-black">
                         Coming Soon
+                    </button>
+                </div>
+                <div className="lg:hidden mr-5">
+                    <button className="cursor-pointer font-bold bg-transparent transition-all duration-400 h-full flex flex-col justify-center gap-y-2">
+                        <div className="w-8 h-0.5 bg-white"></div>
+                        <div className="w-8 h-0.5 bg-white"></div>
+                        <div className="w-8 h-0.5 bg-white"></div>
                     </button>
                 </div>
             </nav>
