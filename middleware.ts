@@ -1,9 +1,13 @@
 import { NextResponse } from 'next/server';
 import type { NextRequest } from 'next/server';
 
-export const runtime = 'edge';
+export const config = {
+    matcher: [
+        '/((?!api|_next/static|_next/image|favicon.ico|sitemap.xml|robots.txt|.*\\.(?:svg|png|jpg|jpeg|gif|webp|ico)$).*)', // Except For Statics File
+    ],
+};
 
-export function proxy(request: NextRequest) {
+export function middleware(request: NextRequest) {
     const pathName = request.nextUrl.pathname;
 
     if (pathName.startsWith('/register') && !process.env.NEXT_PUBLIC_BYPASS_REGISTER_TIME) {
