@@ -5,6 +5,8 @@ import "./globals.css";
 import {Navbar} from "@/components/ui/navbar";
 import {Footer} from "@/components/ui/footer";
 
+export const runtime = 'edge';
+
 const zootopiaFont = localFont({
     variable: "--font-zootopia",
     src: './zootopia-font.woff2',
