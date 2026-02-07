@@ -23,6 +23,12 @@ const ACCESS_RULES = [
 
 export function middleware(request: NextRequest) {
 
+    if (process.env.NEXT_PUBLIC_IS_COMINGSOON === 'true') {
+        const url = request.nextUrl.clone();
+        url.pathname = '/coming-soon';
+        return NextResponse.rewrite(url);
+    }
+
     if (process.env.NEXT_PUBLIC_BYPASS_REGISTER_TIME === 'true') {
         return NextResponse.next();
     }
