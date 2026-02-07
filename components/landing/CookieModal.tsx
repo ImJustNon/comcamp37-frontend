@@ -12,17 +12,14 @@ export function CookieModal() {
     const [isVisible, setIsVisible] = useState(false)
 
     useEffect(() => {
-        // เช็คใน LocalStorage ว่าเคยกด Accept ไปหรือยัง
         const consent = localStorage.getItem("comcamp37-cookie-consent")
         if (!consent) {
-            // หน่วงเวลานิดหน่อยเพื่อให้ดูนุ่มนวลตอนโหลดหน้าเว็บเสร็จ
             const timer = setTimeout(() => setIsVisible(true), 1000)
             return () => clearTimeout(timer)
         }
     }, [])
 
     const handleAccept = () => {
-        // บันทึกสถานะลงเครื่อง User
         localStorage.setItem("comcamp37-cookie-consent", "true")
         initializeClarity();
         setIsVisible(false)
@@ -38,12 +35,10 @@ export function CookieModal() {
                     transition={{ type: "spring", stiffness: 300, damping: 30 }}
                     className="fixed md:right-5 bottom-0 md:bottom-5 w-[100%] md:w-auto md:max-w-[520px] md:mr-15 rounded-4xl border-3 border-theme-secondary bg-theme-primary/80 z-50 backdrop-blur-xl shadow-2xl"
                 >
-                    {/* Header */}
                     <div className="bg-theme-primary-darken/80 py-4 px-5 rounded-t-[calc(2rem-3px)] text-xl font-bold text-white">
                         We use cookies!
                     </div>
 
-                    {/* Content */}
                     <div className="px-5 py-6 text-white/90">
                         เว็บไซต์ ComCamp 37 มีการใช้ <b>คุกกี้ (Cookie)</b> พื้นฐานที่จำเป็นซึ่งช่วยให้
                         สามารถเข้าใช้เว็บไซต์ได้โดยการเปิดใช้ฟังก์ชันพื้นฐานต่างๆ และการเข้าสู่
