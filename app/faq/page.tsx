@@ -11,6 +11,8 @@ import {
     AccordionItem,
     AccordionTrigger,
 } from "@/components/ui/accordion"
+import {Footer} from "@/components/ui/footer";
+import {Navbar} from "@/components/ui/navbar";
 
 const FAQQuestions = [
     {
@@ -84,12 +86,12 @@ const FAQQuestions = [
     },
 ]
 
-export default function Register() {
+export default function faqPage() {
     return (
       <>
       <div className="flex flex-col justify-center items-center">
         <div className='flex flex-col justify-center w-full items-center pt-16 pb-10 mb-10'>
-            <p className='text-8xl mb-4'>FAQ</p><p className='text-neutral-700'>Frequently Asked Question</p>
+            <p className='text-8xl mb-4 font-zootopia'>FAQ</p><p className='text-white/50'>Frequently Asked Question</p>
         </div>
         {/* 1 ก้อน */}
         <div className="z-20 flex-3 bg-theme-secondary w-full px-5 py-5 md:p-10 md:pl-15 relative">
@@ -108,6 +110,8 @@ export default function Register() {
                 </Accordion>
         </div>
         </div>
+
+          <Footer/>
         
     </>
     );

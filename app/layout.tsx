@@ -59,12 +59,7 @@ export default function RootLayout({
         <body
             className={`${notoSansThai.variable} ${zootopiaFont.variable} ${baiJamjuree.variable} ${roboto.variable} font-bai_jamjuree antialiased bg-[#1F456E] dark`} /* bg-[#2D364E] #232C40 */
         >
-        { process.env.NEXT_PUBLIC_IS_COMINGSOON ? (
-            ''
-        ) : (
-            <Navbar/>
-        )}
-
+        { process.env.NEXT_PUBLIC_IS_COMINGSOON  == 'false' && (<Navbar/>)}
         {children}
         <MicrosoftClarity/>
         </body>

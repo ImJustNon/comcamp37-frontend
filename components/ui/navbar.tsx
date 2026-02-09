@@ -9,7 +9,7 @@ import { motion } from "motion/react";
 function Navbar() {
     const router = useRouter();
     const pathname = usePathname();
-    const isLandingPage = pathname === '/';
+    const isLandingPage = (pathname === '/');
 
     const [isMenuOpen, setIsMenuOpen] = useState(false);
 
@@ -17,9 +17,9 @@ function Navbar() {
 
     return (
         <motion.div
-            initial={{ y: -100, opacity: 1 }} // เริ่มต้น: อยู่ข้างบน -100px และโปร่งใส
-            animate={{ y: 0, opacity: 1 }}    // จบที่: ตำแหน่งเดิม และชัดเจน
-            transition={{ duration: 0.8, ease: [0.16, 1, 0.3, 1] }} // ใช้ Ease curve แบบ Apple style (นุ่มๆ)
+            initial={{ y: -100, opacity: 1 }}
+            animate={{ y: 0, opacity: 1 }}
+            transition={{ duration: 0.8, ease: [0.16, 1, 0.3, 1] }}
             className={`p-3 top-0 w-full ${isLandingPage ? 'sticky md:fixed' : 'sticky'} flex flex-col items-center font-zootopia z-[1000]`}
         >
 
@@ -35,8 +35,6 @@ function Navbar() {
 
                 shadow-[0_20px_25px_-5px_rgba(0,0,0,0.1),_0_8px_10px_-6px_rgba(0,0,0,0.1),_inset_0_1px_0_0_rgba(255,255,255,0.5),_inset_0_0_20px_0_rgba(255,255,255,0.05)]
             ">
-                {/* Logo */}
-                {/* เพิ่ม motion ให้ Logo เด้งเข้ามานิดหน่อย */}
                 <div
                     className="h-full flex-1 flex flex-row pt-[2px]"
                 >
@@ -56,7 +54,6 @@ function Navbar() {
                     </a>
                 </div>
 
-                {/* Desktop Links (ซ่อนบน Mobile) */}
                 <div className={`${isLandingPage ? 'lg:flex hidden' : 'hidden'} flex-2 flex-row gap-x-5 justify-between font-bold xl:text-lg pt-1`}>
                     {['About', 'Learning', 'Condition', 'Timeline', 'Contact'].map((item, index) => (
                         <a
