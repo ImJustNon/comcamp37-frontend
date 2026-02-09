@@ -38,7 +38,7 @@ export default function Home() {
       <motion.div className="flex flex-col "
                   variants={containerVariants}
                   initial="hidden"
-                  whileInView="visible"
+                  animate="visible"
                   viewport={{ once: true }}
       >
           <div>
