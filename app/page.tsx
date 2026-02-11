@@ -1,6 +1,5 @@
 "use client"
 
-import Image from "next/image";
 import { motion } from "motion/react"
 import HeroSection from "@/components/landing/HeroSection";
 import AboutSection from "@/components/landing/AboutSection";
@@ -10,9 +9,7 @@ import ConditionSection from "@/components/landing/ConditionSection";
 import TimelineSection from "@/components/landing/TimelineSection";
 import FAQSection from "@/components/landing/FAQSection";
 import ClickSpark from "@/components/landing/ClickClick";
-import {Navbar} from "@/components/ui/navbar";
 import {CookieModal} from "@/components/landing/CookieModal";
-import ComingSoonSection from "@/components/comingSoon/ComingSoonSection";
 import {Footer} from "@/components/ui/footer";
 
 export default function Home() {
@@ -35,7 +32,7 @@ export default function Home() {
           duration={400}
           extraScale={2}
       >
-      <motion.div className="flex flex-col "
+      <motion.div className="flex flex-col"
                   variants={containerVariants}
                   initial="hidden"
                   animate="visible"
