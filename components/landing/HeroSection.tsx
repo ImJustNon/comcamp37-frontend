@@ -48,33 +48,33 @@ function HeroSection() {
                             alt="Comcamp 37 Logo"
                             width={800}
                             height={800}
-                            priority
+                            unoptimized
                         />
                     </div>
 
                     <motion.div variants={itemVariants} className="absolute top-0 left-0 w-full z-10">
-                        <Image className="w-full [clip-path:polygon(19%_20%,26%_46%,0%_50%,0%_25%)]" src={`${process.env.NEXT_PUBLIC_STATIC_ASSETS_URL}/Comcamp-Logo.png`} alt="Logo Part" width={800} height={800} priority />
+                        <Image className="w-full [clip-path:polygon(19%_20%,26%_46%,0%_50%,0%_25%)]" src={`${process.env.NEXT_PUBLIC_STATIC_ASSETS_URL}/Comcamp-Logo.png`} alt="Logo Part" width={800} height={800} unoptimized />
                     </motion.div>
                     <motion.div variants={itemVariants} className="absolute top-0 left-0 w-full z-10">
-                        <Image className="w-full [clip-path:polygon(39%_19%,47%_35%,41%_43%,28%_45%,20%_31%)]" src={`${process.env.NEXT_PUBLIC_STATIC_ASSETS_URL}/Comcamp-Logo.png`} alt="Logo Part" width={800} height={800} priority />
+                        <Image className="w-full [clip-path:polygon(39%_19%,47%_35%,41%_43%,28%_45%,20%_31%)]" src={`${process.env.NEXT_PUBLIC_STATIC_ASSETS_URL}/Comcamp-Logo.png`} alt="Logo Part" width={800} height={800} unoptimized />
                     </motion.div>
                     <motion.div variants={itemVariants} className="absolute top-0 left-0 w-full  z-10">
-                        <Image className="w-full  [clip-path:polygon(74%_11%,72%_44%,44%_44%,48%_26%,43%_9%)]" src={`${process.env.NEXT_PUBLIC_STATIC_ASSETS_URL}/Comcamp-Logo.png`} alt="Logo Part" width={800} height={800} priority />
+                        <Image className="w-full  [clip-path:polygon(74%_11%,72%_44%,44%_44%,48%_26%,43%_9%)]" src={`${process.env.NEXT_PUBLIC_STATIC_ASSETS_URL}/Comcamp-Logo.png`} alt="Logo Part" width={800} height={800} unoptimized />
                     </motion.div>
                     <motion.div variants={itemVariants} className="absolute top-0 left-0 w-full  z-10">
-                        <Image className="w-full  [clip-path:polygon(11%_48%,33%_45%,35%_77%,10%_77%)]" src={`${process.env.NEXT_PUBLIC_STATIC_ASSETS_URL}/Comcamp-Logo.png`} alt="Logo Part" width={800} height={800} priority />
+                        <Image className="w-full  [clip-path:polygon(11%_48%,33%_45%,35%_77%,10%_77%)]" src={`${process.env.NEXT_PUBLIC_STATIC_ASSETS_URL}/Comcamp-Logo.png`} alt="Logo Part" width={800} height={800} unoptimized />
                     </motion.div>
                     <motion.div variants={itemVariants} className="absolute top-0 left-0 w-full  z-10">
-                        <Image className="w-full  [clip-path:polygon(34%_53%,49%_53%,49%_73%,35%_73%)]" src={`${process.env.NEXT_PUBLIC_STATIC_ASSETS_URL}/Comcamp-Logo.png`} alt="Logo Part" width={800} height={800} priority />
+                        <Image className="w-full  [clip-path:polygon(34%_53%,49%_53%,49%_73%,35%_73%)]" src={`${process.env.NEXT_PUBLIC_STATIC_ASSETS_URL}/Comcamp-Logo.png`} alt="Logo Part" width={800} height={800} unoptimized />
                     </motion.div>
                     <motion.div variants={itemVariants} className="absolute top-0 left-0 w-full  z-10">
-                        <Image className="w-full  [clip-path:polygon(55%_52%,69%_52%,74%_73%,49%_73%)]" src={`${process.env.NEXT_PUBLIC_STATIC_ASSETS_URL}/Comcamp-Logo.png`} alt="Logo Part" width={800} height={800} priority />
+                        <Image className="w-full  [clip-path:polygon(55%_52%,69%_52%,74%_73%,49%_73%)]" src={`${process.env.NEXT_PUBLIC_STATIC_ASSETS_URL}/Comcamp-Logo.png`} alt="Logo Part" width={800} height={800} unoptimized />
                     </motion.div>
                     <motion.div variants={itemVariants} className="absolute top-0 left-0 w-full  z-10">
-                        <Image className="w-full  [clip-path:polygon(74%_52%,92%_54%,91%_67%,80%_68%,79%_85%,58%_85%,55%_77%,74%_77%)]" src={`${process.env.NEXT_PUBLIC_STATIC_ASSETS_URL}/Comcamp-Logo.png`} alt="Logo Part" width={800} height={800} priority />
+                        <Image className="w-full  [clip-path:polygon(74%_52%,92%_54%,91%_67%,80%_68%,79%_85%,58%_85%,55%_77%,74%_77%)]" src={`${process.env.NEXT_PUBLIC_STATIC_ASSETS_URL}/Comcamp-Logo.png`} alt="Logo Part" width={800} height={800} unoptimized />
                     </motion.div>
                     <motion.div variants={itemVariants} className="absolute top-0 left-0 w-full  z-10">
-                        <Image className="w-full  [clip-path:polygon(74%_24%,72%_41%,88%_53%,100%_55%,100%_37%,88%_26%)]" src={`${process.env.NEXT_PUBLIC_STATIC_ASSETS_URL}/Comcamp-Logo.png`} alt="Logo Part" width={800} height={800} priority />
+                        <Image className="w-full  [clip-path:polygon(74%_24%,72%_41%,88%_53%,100%_55%,100%_37%,88%_26%)]" src={`${process.env.NEXT_PUBLIC_STATIC_ASSETS_URL}/Comcamp-Logo.png`} alt="Logo Part" width={800} height={800} unoptimized />
                     </motion.div>
                 </div>
                 <motion.div variants={itemVariants} className="text-center font-medium px-4 md:px-10 py-6 rounded-4xl -mt-6 md:-mt-3 mx-3

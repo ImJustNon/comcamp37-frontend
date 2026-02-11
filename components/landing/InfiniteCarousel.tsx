@@ -51,6 +51,7 @@ const InfiniteCarousel = () => {
                                 fill
                                 sizes="auto"
                                 className="object-cover"
+                                unoptimized
                             />
                         </div>
                     ))}
@@ -68,6 +69,7 @@ const InfiniteCarousel = () => {
                                 fill
                                 sizes="auto"
                                 className="object-cover"
+                                unoptimized
                             />
                         </div>
                     ))}
@@ -85,6 +87,7 @@ const InfiniteCarousel = () => {
                                 fill
                                 sizes="auto"
                                 className="object-cover"
+                                unoptimized
                             />
                         </div>
                     ))}

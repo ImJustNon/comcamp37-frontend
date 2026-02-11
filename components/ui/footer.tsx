@@ -46,7 +46,7 @@ function Footer() {
                         alt="Comcamp 37 Logo"
                         fill
                         sizes="auto"
-                        priority
+                        unoptimized
                     />
                 </div>
                 <div className="w-full text-center py-3 md:px-20 text-sm leading-5 text-slate-500 flex flex-col md:flex-row gap-x-3 gap-y-10">

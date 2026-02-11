@@ -39,7 +39,7 @@ function SponsorSection() {
                         alt="KMUTT | CPE"
                         height={429}
                         width={450}
-                        priority
+                        unoptimized
                     />
                 </div>
 
