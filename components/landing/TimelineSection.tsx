@@ -9,7 +9,7 @@ const TIMELINE_DATA = [
         id: 1,
         title: "เปิดรับสมัคร",
         dateDisplay: "23 กุมภาพันธ์ - 10 มีนาคม 2569",
-        startDate: "2026-02-11",
+        startDate: "2026-02-23",
         endDate: "2026-03-10",
     },
     {
@@ -22,16 +22,16 @@ const TIMELINE_DATA = [
     {
         id: 3,
         title: "ยืนยันสิทธิ์",
-        dateDisplay: "21 - 23 มีนาคม 2569",
+        dateDisplay: "21 - 22 มีนาคม 2569",
         startDate: "2026-03-21",
-        endDate: "2026-03-23",
+        endDate: "2026-03-22",
     },
     {
         id: 4,
         title: "วันค่าย",
-        dateDisplay: "8 - 11 เมษายน 2569",
+        dateDisplay: "8 - 12 เมษายน 2569",
         startDate: "2026-04-08",
-        endDate: "2026-04-11",
+        endDate: "2026-04-12",
     },
 ];
 
@@ -227,7 +227,7 @@ function TimelineSection() {
                     >
                         {/* Progress Fill (Flowing Effect) */}
                         <motion.div
-                            className="h-full bg-linear-to-r from-red-600 to-red-400"
+                            className="h-full bg-theme-secondary"
                             style={{ boxShadow: "0 0 15px rgba(239, 68, 68, 0.6)" }}
                             initial={{ width: 0 }}
                             animate={{ width: `${progress}%` }}
@@ -273,9 +273,9 @@ function TimelineSection() {
                                         border-4 w-12 h-12 xl:w-16 xl:h-16 rounded-full mt-4 flex items-center justify-center shadow-2xl z-20 
                                         transition-all duration-500
                                         ${isCompleted
-                                        ? 'border-red-600 bg-red-500'
+                                        ? 'border-theme-secondary bg-theme-secondary'
                                         : isCurrent
-                                            ? 'bg-red-500 border-white ring-4 ring-red-500/30'
+                                            ? 'bg-theme-secondary border-white ring-4 ring-theme-secondary/30'
                                             : 'border-gray-600 bg-gray-800'
                                     }
                                     `}
@@ -306,7 +306,7 @@ function TimelineSection() {
                 <div className="lg:hidden flex flex-col gap-8 mt-8 relative px-4">
                     <div className="absolute left-9.5 -top-6 w-1.5 h-full bg-black/40 rounded-full overflow-hidden border border-white/5">
                         <motion.div
-                            className="w-full bg-red-500 shadow-[0_0_10px_rgba(239,68,68,0.8)]"
+                            className="w-full bg-theme-secondary shadow-[0_0_10px_rgba(239,68,68,0.8)]"
                             initial={{ height: 0 }}
                             animate={{ height: `${progress}%` }}
                             transition={{ duration: 1.5, ease: "circOut" }}
@@ -340,9 +340,9 @@ function TimelineSection() {
                                         border-4 w-12 h-12 sm:w-14 sm:h-14 rounded-full flex items-center justify-center shadow-lg flex-shrink-0 
                                         transition-all duration-500
                                         ${isCompleted
-                                        ? 'border-red-600 bg-red-500'
+                                        ? 'border-theme-secondary bg-theme-secondary'
                                         : isCurrent
-                                            ? 'border-white bg-red-500 ring-4 ring-red-500/30'
+                                            ? 'border-white bg-theme-secondary ring-4 ring-theme-secondary/30'
                                             : 'border-gray-600 bg-gray-800'
                                     }
                                     `}
