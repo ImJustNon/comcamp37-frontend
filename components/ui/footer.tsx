@@ -2,7 +2,7 @@
 
 import * as React from "react"
 import Image from "next/image";
-import { usePathname, useRouter } from 'next/navigation';
+import { useRouter } from 'next/navigation';
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
 import {faFacebookSquare, faInstagram, faTiktok} from "@fortawesome/free-brands-svg-icons";
 
