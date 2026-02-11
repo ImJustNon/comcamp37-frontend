@@ -29,7 +29,7 @@ function Footer() {
                     </div>
                 </div>
                 <div className="row-span-1 col-span-1 flex flex-col gap-5">
-                    <div className="font-zootopia text-4xl">Contanct</div>
+                    <div className="font-zootopia text-4xl">Contact</div>
                     <div className="pl-2 xl:text-lg">
                         พี่โดนัท : 093 370 7960<br/>
                         พี่เกน : 062 594 1597<br/>
