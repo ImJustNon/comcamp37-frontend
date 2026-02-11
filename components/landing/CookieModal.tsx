@@ -35,7 +35,7 @@ export function CookieModal() {
                     transition={{ type: "spring", stiffness: 300, damping: 30 }}
                     className="fixed md:right-5 bottom-0 md:bottom-5 w-[100%] md:w-auto md:max-w-[520px] md:mr-15 rounded-4xl border-3 border-theme-secondary bg-theme-primary/80 z-50 backdrop-blur-xl shadow-2xl"
                 >
-                    <div className="bg-theme-primary-darken/80 py-4 px-5 rounded-t-[calc(2rem-3px)] text-xl font-bold text-white">
+                    <div className="bg-theme-primary-darken/80 rounded-t-3xl py-4 px-5 text-xl font-bold text-white">
                         We use cookies!
                     </div>
 
