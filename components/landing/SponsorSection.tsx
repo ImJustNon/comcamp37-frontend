@@ -1,7 +1,6 @@
 "use client"
 
 import Image from "next/image";
-import {motion} from "motion/react";
 import * as React from "react";
 
 function SponsorSection() {
@@ -36,7 +35,7 @@ function SponsorSection() {
                 <div className="flex flex-row justify-center">
                     <Image
 
-                        src="/Landing/Kmutt_CPE.png"
+                        src={`${process.env.NEXT_PUBLIC_STATIC_ASSETS_URL}/Landing/Kmutt_CPE.png`}
                         alt="KMUTT | CPE"
                         height={429}
                         width={450}

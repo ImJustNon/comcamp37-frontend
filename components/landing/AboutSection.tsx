@@ -76,7 +76,7 @@ function AboutSection() {
                         className="w-full max-w-80 mx-auto lg:mx-0 p-5 lg:hidden"
                     >
                         <div>
-                            <Image src="/Landing/Callcenter.png" alt="" width={800} height={800} priority />
+                            <Image src={`${process.env.NEXT_PUBLIC_STATIC_ASSETS_URL}/Landing/Callcenter.png`} alt="" width={800} height={800} priority />
                         </div>
                     </motion.div>
 
@@ -90,7 +90,7 @@ function AboutSection() {
                 <div className="w-[40%] h-screen flex-col items-center justify-center align-middle gap-3 z-10 max-w-180 hidden lg:flex">
                     <motion.div variants={cartoonPop} className="w-full p-10 lg:p-20">
                         <div>
-                            <Image src="/Landing/Callcenter.png" alt="" width={800} height={800} priority />
+                            <Image src={`${process.env.NEXT_PUBLIC_STATIC_ASSETS_URL}/Landing/Callcenter.png`} alt="" width={800} height={800} priority />
                         </div>
                     </motion.div>
                 </div>
