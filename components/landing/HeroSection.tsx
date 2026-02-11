@@ -4,6 +4,7 @@ import InfiniteCarousel from "@/components/landing/InfiniteCarousel";
 import Image from "next/image";
 import {motion} from "motion/react";
 import {Variants} from "motion";
+import ThaiWordBreaker from "@/components/ui/ThaiWordBreaker";
 
 const itemVariants:Variants = {
     hidden: {
@@ -84,11 +85,13 @@ function HeroSection() {
 
                 shadow-[0_20px_25px_-5px_rgba(0,0,0,0.1),_0_8px_10px_-6px_rgba(0,0,0,0.1),_inset_0_1px_0_0_rgba(0,0,0,0.5),_inset_0_0_20px_0_rgba(0,0,0,0.05)]
                 ">
-                    <span className="drop-shadow-sm drop-shadow-black text-lg">
-                        ขอเชิญน้อง ๆ ที่สนใจด้านคอมพิวเตอร์ ร่วมเปิดประสบการณ์การเรียนรู้กับ ComCamp ครั้งที่ 37<br/>
-                        ค่ายที่จะพาน้อง ๆ มาค้นหาและปลดล็อกศักยภาพด้านวิศวกรรมคอมพิวเตอร์ ผ่านกิจกรรมและเวิร์กชอปที่ทั้งสนุกและได้ความรู้<br/>
-                        พร้อมสัมผัสชีวิตนักศึกษาวิศวะคอมฯ อย่างใกล้ชิด กับเพื่อน ๆ และพี่ ๆ CPE<br/><br className="block md:hidden"/>
-                        การผจญภัยครั้งใหม่กำลังรออยู่ แล้วพบกันใน ComCamp ครั้งที่ 37
+                    <span className="drop-shadow-sm drop-shadow-black text-lg space-x-1">
+                        <ThaiWordBreaker text="ขอเชิญน้อง ๆ ที่สนใจด้านคอมพิวเตอร์ ร่วมเปิดประสบการณ์การเรียนรู้กับ"/>
+                        <span className="inline-block whitespace-nowrap">ComCamp ครั้งที่ 37</span>
+                        <br/>
+                        <ThaiWordBreaker text="ค่ายที่จะพาน้อง ๆ มาค้นหาและปลดล็อกศักยภาพด้านวิศวกรรมคอมพิวเตอร์ ผ่านกิจกรรมและเวิร์กชอปที่ทั้งสนุกและได้ความรู้"/><br/>
+                        <ThaiWordBreaker text="พร้อมสัมผัสชีวิตนักศึกษาวิศวะคอมฯ อย่างใกล้ชิด กับเพื่อน ๆ และพี่ ๆ CPE"/><br/><br className="block md:hidden"/>
+                        <ThaiWordBreaker text="การผจญภัยครั้งใหม่กำลังรออยู่ แล้วพบกันใน ComCamp ครั้งที่ 37"/>
                     </span>
                 </motion.div>
                 <motion.div

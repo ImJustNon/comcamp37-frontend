@@ -174,7 +174,7 @@ function TimelineSection() {
                 <div className="flex flex-row items-center justify-center gap-4 md:gap-8 lg:gap-10 overflow-hidden">
                     <motion.svg
                         variants={headerLineVariants}
-                        className="hidden sm:block w-32 md:w-64 lg:w-96 xl:w-[500px] origin-right"
+                        className="hidden md:block w-32 md:w-64 lg:w-96 xl:w-[500px] origin-right"
                         height="5"
                         viewBox="0 0 500 5"
                         fill="none"
@@ -194,14 +194,26 @@ function TimelineSection() {
                         whileInView={{ scale: 1 }}
                         viewport={{ once: true }}
                         transition={{ type: "spring", bounce: 0.6 }}
-                        className="text-3xl sm:text-4xl md:text-5xl font-bold text-white whitespace-nowrap font-zootopia"
+                        className="text-3xl sm:text-4xl md:text-5xl font-bold text-white whitespace-nowrap font-zootopia hidden md:block"
                     >
                         Timeline
                     </motion.h2>
 
+                    <motion.div
+                        initial={{ scale: 0 }}
+                        whileInView={{ scale: 1 }}
+                        viewport={{ once: true }}
+                        transition={{ type: "spring", bounce: 0.6 }}
+                        className="font-zootopia text-5xl md:hidden flex-row flex items-center justify-center gap-3 w-full"
+                    >
+                        <div className="h-1.5 w-full flex-1 bg-linear-to-l from-white to-transparent"></div>
+                        <div>Timeline</div>
+                        <div className="h-1.5 w-full flex-1 bg-linear-to-r from-white to-transparent"></div>
+                    </motion.div>
+
                     <motion.svg
                         variants={headerLineVariants}
-                        className="hidden sm:block w-32 md:w-64 lg:w-96 xl:w-[500px] origin-left"
+                        className="hidden md:block w-32 md:w-64 lg:w-96 xl:w-[500px] origin-left"
                         height="5"
                         viewBox="0 0 500 5"
                         fill="none"
@@ -223,7 +235,7 @@ function TimelineSection() {
                     {/* Progress Bar Background */}
                     <div
                         ref={progressBarRef}
-                        className="absolute bottom-6.5 left-0 right-0 h-3 bg-black/40 rounded-full shadow-inner overflow-hidden border border-white/5"
+                        className="absolute xl:bottom-6.5 bottom-4.5 left-0 right-0 h-3 bg-black/40 rounded-full shadow-inner overflow-hidden border border-white/5"
                     >
                         {/* Progress Fill (Flowing Effect) */}
                         <motion.div

@@ -3,6 +3,7 @@
 import Image from "next/image";
 import { motion } from "motion/react";
 import {Variants} from "motion";
+import ThaiWordBreaker from "@/components/ui/ThaiWordBreaker";
 
 function AboutSection() {
     // 1. Container สำหรับคุมจังหวะการโผล่ (Stagger)
@@ -72,7 +73,7 @@ function AboutSection() {
                     {/* รูปภาพฝั่ง Mobile: เด้งออกมาแล้วลอยดึ๋งๆ */}
                     <motion.div
                         variants={cartoonPop}
-                        className="w-full max-w-80 mx-auto md:mx-0 p-5 lg:hidden"
+                        className="w-full max-w-80 mx-auto lg:mx-0 p-5 lg:hidden"
                     >
                         <div>
                             <Image src="/Landing/Callcenter.png" alt="" width={800} height={800} priority />
@@ -80,12 +81,9 @@ function AboutSection() {
                     </motion.div>
 
                     {/* ข้อความค่อยๆ เด้งตามมา */}
-                    <motion.span variants={elasticSlide} className="text-white font-medium text-lg text-center md:text-left">
-                        ComCamp คือ โครงการฝึกอบรมเชิงปฏิบัติการคอมพิวเตอร์เบื้องต้น จัดโดยภาควิชาวิศวกรรมคอมพิวเตอร์ มจธ. โดยภายในค่าย น้อง ๆ จะได้เรียนรู้พื้นฐานด้านคอมพิวเตอร์ผ่านกิจกรรมอันสนุกที่หลากหลาย พร้อมกับการแนะแนวทางการศึกษาต่อในสายวิศวกรรมคอมพิวเตอร์
-                        <br/>เปิดโลกมุมมองใหม่ ๆ ผ่านการเรียนรู้ลงมือปฏิบัติและสร้าง
-                        <br/>แรงบันดาลใจ ให้ค้นพบตัวเองและรู้จักโลกของ
-                        <br/>วิศวกรรมคอมพิวเตอร์มากยิ่งขึ้น
-                    </motion.span>
+                    <motion.p variants={elasticSlide} className="text-pretty text-white font-medium text-lg text-center lg:text-left">
+                        <strong>ComCamp </strong><ThaiWordBreaker text="คือ โครงการฝึกอบรมเชิงปฏิบัติการคอมพิวเตอร์เบื้องต้น จัดโดยภาควิชาวิศวกรรมคอมพิวเตอร์ มจธ. โดยภายในค่าย น้อง ๆ จะได้เรียนรู้พื้นฐานด้านคอมพิวเตอร์ผ่านกิจกรรมอันสนุกที่หลากหลาย พร้อมกับการแนะแนวทางการศึกษาต่อในสายวิศวกรรมคอมพิวเตอร์ เปิดโลกมุมมองใหม่ ๆ ผ่านการเรียนรู้ลงมือปฏิบัติและสร้างแรงบันดาลใจ ให้ค้นพบตัวเองและรู้จักโลกของ วิศวกรรมคอมพิวเตอร์มากยิ่งขึ้น"/>
+                    </motion.p>
                 </div>
 
                 {/* รูปภาพฝั่ง Desktop: เด้งจากเล็กไปใหญ่ + ลอย Loop */}

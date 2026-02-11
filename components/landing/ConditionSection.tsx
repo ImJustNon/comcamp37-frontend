@@ -4,6 +4,7 @@ import Image from "next/image";
 import { motion } from "motion/react";
 import { FootTrailColor } from "@/components/landing/FootTrail";
 import {Variants} from "motion";
+import React from "react";
 
 function ConditionSection() {
     // 1. Container ควบคุมจังหวะการโผล่ของกล่องเงื่อนไข
@@ -75,32 +76,41 @@ function ConditionSection() {
                 </motion.div>
 
                 {/* --- Condition Card 1 --- */}
-                <motion.div variants={slideInLeft} className="md:h-[180px] xl:w-[75%] backdrop-blur-sm rounded-4xl flex flex-col md:flex-row align-middle items-center self-center md:self-start lg:w-full bg-gradient-to-b from-[#1F456E]/30 to-[#1F456E]/20 border border-white/20 shadow-xl">
+                <motion.div variants={slideInLeft} className="md:h-[180px] w-full xl:w-[75%] backdrop-blur-sm rounded-4xl flex flex-col md:flex-row align-middle items-center self-center md:self-start lg:w-full bg-gradient-to-b from-[#1F456E]/30 to-[#1F456E]/20 border border-white/20 shadow-xl">
                     <motion.div variants={imagePop} className="md:w-[320px] relative">
                         <Image src="/Landing/Conditions/Condition_1.png" alt="" width={600} height={320} className="object-cover p-[10px] rounded-4xl"/>
                     </motion.div>
-                    <div className="text-center flex-1 font-semibold text-xl p-5 text-white">น้อง ๆ ที่กำลังศึกษาอยู่ชั้นมัธยมศึกษาปีที่ 4 - 5 <br/>(ปีการศึกษา 2568) หรือเทียบเท่า (GPAX 3.00 ขึ้นไป)</div>
+                    <div className="text-center text-pretty flex-1 font-semibold text-xl p-5 text-white space-x-1.5">
+                        <span>น้อง ๆ ที่กำลังศึกษาอยู่ชั้นมัธยมศึกษาปีที่ 4 - 5</span>
+                        <span className="inline-block whitespace-nowrap">
+                            (ปีการศึกษา 2568)
+                        </span>
+                        <span>หรือเทียบเท่า</span>
+                        <span className="inline-block whitespace-nowrap">
+                            โดยมี GPAX ตั้งแต่ 3.00 ขึ้นไป
+                        </span>
+                    </div>
                 </motion.div>
 
                 {/* --- Condition Card 2 (Right Side) --- */}
-                <motion.div variants={slideInRight} className="md:h-[180px] xl:w-[75%] backdrop-blur-sm rounded-4xl flex flex-col md:flex-row align-middle items-center self-center xl:self-end lg:w-full bg-gradient-to-b from-[#151E3D]/30 to-[#151E3D]/20 border border-white/20 shadow-xl">
-                    <div className="text-center flex-1 font-semibold text-xl p-5 order-2 md:order-1 text-white">สามารถเข้าพักได้ในระยะเวลาและสถานที่ที่กำหนด<br/>ตลอดโครงการ</div>
+                <motion.div variants={slideInRight} className="md:h-[180px] w-full xl:w-[75%] backdrop-blur-sm rounded-4xl flex flex-col md:flex-row align-middle items-center self-center xl:self-end lg:w-full bg-gradient-to-b from-[#151E3D]/30 to-[#151E3D]/20 border border-white/20 shadow-xl">
+                    <div className="text-center flex-1 font-semibold text-xl p-5 order-2 md:order-1 text-white text-pretty">สามารถเข้าพักได้ในระยะเวลาและสถานที่ที่กำหนด<br/>ตลอดโครงการ</div>
                     <motion.div variants={imagePop} className="md:w-[320px] relative order-1 md:order-2">
                         <Image src="/Landing/Conditions/Condition_2.png" alt="" width={600} height={320} className="object-cover p-[10px] rounded-4xl"/>
                     </motion.div>
                 </motion.div>
 
                 {/* --- Condition Card 3 --- */}
-                <motion.div variants={slideInLeft} className="md:h-[180px] xl:w-[75%] backdrop-blur-sm rounded-4xl flex flex-col md:flex-row align-middle items-center self-center md:self-start xl:mx-30 lg:w-full bg-gradient-to-b from-[#151E3D]/30 to-[#151E3D]/20 border border-white/20 shadow-xl">
+                <motion.div variants={slideInLeft} className="md:h-[180px] w-full xl:w-[75%] backdrop-blur-sm rounded-4xl flex flex-col md:flex-row align-middle items-center self-center md:self-start xl:mx-30 lg:w-full bg-gradient-to-b from-[#151E3D]/30 to-[#151E3D]/20 border border-white/20 shadow-xl">
                     <motion.div variants={imagePop} className="md:w-[320px] relative">
                         <Image src="/Landing/Conditions/Condition_3.png" alt="" width={600} height={320} className="object-cover p-[10px] rounded-4xl"/>
                     </motion.div>
-                    <div className="text-center flex-1 font-semibold text-xl p-5 text-white">มีความสนใจในด้านคอมพิวเตอร์และภาควิชาวิศวกรรมคอมพิวเตอร์<br/>โดยไม่จำเป็นต้องมีพื้นฐานการเขียนโปรแกรม</div>
+                    <div className="text-center flex-1 font-semibold text-xl p-5 text-white text-pretty">มีความสนใจในด้านคอมพิวเตอร์และภาควิชาวิศวกรรมคอมพิวเตอร์<br/>โดยไม่จำเป็นต้องมีพื้นฐานการเขียนโปรแกรม</div>
                 </motion.div>
 
                 {/* --- Condition Card 4 (Right Side) --- */}
-                <motion.div variants={slideInRight} className="md:h-[180px] xl:w-[75%] backdrop-blur-sm rounded-4xl flex flex-col md:flex-row align-middle items-center self-center xl:self-end xl:mx-30 lg:w-full bg-gradient-to-b from-[#4C3B33]/30 to-[#4C3B33]/20 border border-white/20 shadow-xl">
-                    <div className="text-center flex-1 font-semibold text-xl p-5 order-2 md:order-1 text-white">ผู้ปกครองอนุญาตและยินยอมให้นักเรียนเข้าร่วมโครงการ</div>
+                <motion.div variants={slideInRight} className="md:h-[180px] w-full xl:w-[75%] backdrop-blur-sm rounded-4xl flex flex-col md:flex-row align-middle items-center self-center xl:self-end xl:mx-30 lg:w-full bg-gradient-to-b from-[#4C3B33]/30 to-[#4C3B33]/20 border border-white/20 shadow-xl">
+                    <div className="text-center flex-1 font-semibold text-xl p-5 order-2 md:order-1 text-white text-pretty">ผู้ปกครองอนุญาตและยินยอมให้นักเรียนเข้าร่วมโครงการ</div>
                     <motion.div variants={imagePop} className="md:w-[320px] relative order-1 md:order-2">
                         <Image src="/Landing/Conditions/Condition_4.png" alt="" width={600} height={320} className="object-cover p-[10px] rounded-4xl"/>
                     </motion.div>
