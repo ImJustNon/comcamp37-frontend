@@ -3,10 +3,11 @@
 import Image from "next/image";
 import { motion } from "motion/react";
 import FolderSwitcher from "@/components/landing/LearningSwitcher";
+import {Variants} from "motion";
 
 function LearningSection() {
     // 1. Variants สำหรับหัวข้อ (เด้งออกมาแบบ Pop)
-    const titleVariants = {
+    const titleVariants:Variants = {
         hidden: { opacity: 0, scale: 0.8, rotate: -2 },
         visible: {
             opacity: 1,
@@ -17,7 +18,7 @@ function LearningSection() {
     };
 
     // 2. Variants สำหรับแถบสี (รูดออกมาจากซ้าย)
-    const barVariants = {
+    const barVariants:Variants = {
         hidden: { width: 0, opacity: 0 },
         visible: {
             width: "100%",
@@ -27,7 +28,7 @@ function LearningSection() {
     };
 
     // 3. Variants สำหรับตัว FolderSwitcher (ค่อยๆ ขยายจากล่างขึ้นบน)
-    const contentVariants = {
+    const contentVariants:Variants = {
         hidden: { opacity: 0, y: 40 },
         visible: {
             opacity: 1,

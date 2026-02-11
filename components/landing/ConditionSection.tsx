@@ -3,10 +3,11 @@
 import Image from "next/image";
 import { motion } from "motion/react";
 import { FootTrailColor } from "@/components/landing/FootTrail";
+import {Variants} from "motion";
 
 function ConditionSection() {
     // 1. Container ควบคุมจังหวะการโผล่ของกล่องเงื่อนไข
-    const containerVariants = {
+    const containerVariants:Variants = {
         visible: {
             transition: {
                 staggerChildren: 0.3, // แต่ละกล่องห่างกัน 0.3 วินาที
@@ -16,7 +17,7 @@ function ConditionSection() {
 
     // 2. ท่า "ไถลมาเบรก" (Siding Entrance)
     // กล่องเลขคี่ (1, 3) ไถลจากซ้าย | กล่องเลขคู่ (2, 4) ไถลจากขวา
-    const slideInLeft = {
+    const slideInLeft:Variants = {
         hidden: { opacity: 0, x: -100, rotate: -2 },
         visible: {
             opacity: 1,
@@ -26,7 +27,7 @@ function ConditionSection() {
         }
     };
 
-    const slideInRight = {
+    const slideInRight:Variants = {
         hidden: { opacity: 0, x: 100, rotate: 2 },
         visible: {
             opacity: 1,
@@ -37,7 +38,7 @@ function ConditionSection() {
     };
 
     // 3. ท่าเด้งของรูปภาพ (Pop Up)
-    const imagePop = {
+    const imagePop:Variants = {
         hidden: { scale: 0.5, opacity: 0 },
         visible: {
             scale: 1,

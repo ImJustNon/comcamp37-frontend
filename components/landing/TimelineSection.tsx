@@ -2,6 +2,7 @@
 
 import { motion } from "motion/react";
 import * as React from "react";
+import {Variants} from "motion";
 
 const TIMELINE_DATA = [
     {
@@ -43,7 +44,7 @@ function TimelineSection() {
     // --- Animation Variants ---
 
     // 1. เส้น Header ขยายออกข้าง
-    const headerLineVariants = {
+    const headerLineVariants:Variants = {
         hidden: { scaleX: 0, opacity: 0 },
         visible: {
             scaleX: 1,
@@ -53,7 +54,7 @@ function TimelineSection() {
     };
 
     // 2. Card เด้งขึ้นมาทีละอัน (Stagger)
-    const cardVariants = {
+    const cardVariants:Variants = {
         hidden: { opacity: 0, scale: 0.5, y: 50 },
         visible: (index: number) => ({
             opacity: 1,
