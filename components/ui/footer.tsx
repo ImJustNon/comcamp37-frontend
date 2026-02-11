@@ -49,7 +49,7 @@ function Footer() {
                         priority
                     />
                 </div>
-                <div className="w-full text-center py-3 px-20 text-sm leading-5 text-slate-500 flex flex-col md:flex-row gap-x-3 gap-y-10">
+                <div className="w-full text-center py-3 md:px-20 text-sm leading-5 text-slate-500 flex flex-col md:flex-row gap-x-3 gap-y-10">
                     <div className="cursor-pointer hover:underline text-base text-white/80 font-medium" onClick={() => {router.push("/privacy")}}>Privacy Policy</div>
                     <div className="border-l-2 border-slate-500 h-auto md:block hidden"></div>
                     <span className="self-center">©2026 ComCamp37. All rights reserved.<br className="md:hidden"/> Made with 🧡 by CPE39.</span>
