@@ -2,17 +2,16 @@
 
 import * as React from "react"
 import Image from "next/image";
-import { usePathname, useRouter } from 'next/navigation';
+import { useRouter } from 'next/navigation';
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
-import {faFacebook, faFacebookSquare, faInstagram, faTiktok} from "@fortawesome/free-brands-svg-icons";
+import {faFacebookSquare, faInstagram, faTiktok} from "@fortawesome/free-brands-svg-icons";
 
 
 function Footer() {
-    const pathname = usePathname();
     const router = useRouter();
-    const isLandingPage = pathname === '/';
     return (
-        <div id={`contact`} className='w-full border-t-7 border-theme-secondary flex flex-col justify-center items-center align-middle bg-theme-primary-darken'>
+        <div className="pt-20 md:pt-0" id={`contact`}>
+        <div className='w-full border-t-7 border-theme-secondary flex flex-col justify-center items-center align-middle bg-theme-primary-darken'>
             <div className="w-full max-w-[1600px] bg-theme-primary-darken flex-col flex gap-y-10 md:grid grid-rows-2 grid-cols-2 md:gap-5 pt-10 pb-20 relative p-20">
                 <div className="row-span-2 col-span-1 flex flex-col gap-10">
                     <div className="font-zootopia text-4xl">Social Media</div>
@@ -29,7 +28,7 @@ function Footer() {
                     </div>
                 </div>
                 <div className="row-span-1 col-span-1 flex flex-col gap-5">
-                    <div className="font-zootopia text-4xl">Contanct</div>
+                    <div className="font-zootopia text-4xl">Contact</div>
                     <div className="pl-2 xl:text-lg">
                         พี่โดนัท : 093 370 7960<br/>
                         พี่เกน : 062 594 1597<br/>
@@ -56,6 +55,7 @@ function Footer() {
                 </div>
             </div>
 
+        </div>
         </div>
     )
 }
