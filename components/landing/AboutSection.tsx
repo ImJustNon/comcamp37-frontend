@@ -2,10 +2,11 @@
 
 import Image from "next/image";
 import { motion } from "motion/react";
+import {Variants} from "motion";
 
 function AboutSection() {
     // 1. Container สำหรับคุมจังหวะการโผล่ (Stagger)
-    const containerVariants = {
+    const containerVariants:Variants = {
         hidden: { opacity: 0 },
         visible: {
             opacity: 1,
@@ -17,7 +18,7 @@ function AboutSection() {
     };
 
     // 2. ท่าเด้งแบบการ์ตูน (Pop Up + Spring)
-    const cartoonPop = {
+    const cartoonPop:Variants = {
         hidden: { opacity: 0, scale: 0.5, rotate: -5 },
         visible: {
             opacity: 1,
@@ -32,7 +33,7 @@ function AboutSection() {
     };
 
     // 3. ท่าสไลด์แบบนุ่มนิ่ม (Slide + Bounce)
-    const elasticSlide = {
+    const elasticSlide:Variants = {
         hidden: { opacity: 0, x: -50 },
         visible: {
             opacity: 1,
