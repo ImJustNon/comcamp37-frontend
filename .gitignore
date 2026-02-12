@@ -42,7 +42,12 @@ yarn-error.log*
 next-env.d.ts
 
 # IntelliJ IDEA
+
 /.idea
 
 .vercel
+.idea
+
+.wrangler
+
 .open-next

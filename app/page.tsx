@@ -10,6 +10,10 @@ import ConditionSection from "@/components/landing/ConditionSection";
 import TimelineSection from "@/components/landing/TimelineSection";
 import FAQSection from "@/components/landing/FAQSection";
 import ClickSpark from "@/components/landing/ClickClick";
+import {Navbar} from "@/components/ui/navbar";
+import {CookieModal} from "@/components/landing/CookieModal";
+import ComingSoonSection from "@/components/comingSoon/ComingSoonSection";
+import {Footer} from "@/components/ui/footer";
 
 export default function Home() {
     const containerVariants = {
@@ -65,7 +69,9 @@ export default function Home() {
           <div className="py-30">
               <SponsorSection/>
           </div>
+          <CookieModal/>
       </motion.div>
+          <Footer/>
       </ClickSpark>
   );
 }

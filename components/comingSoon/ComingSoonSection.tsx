@@ -35,10 +35,10 @@ const bgVariant:Variants = {
     },
 };
 
-function HeroSection() {
+function ComingSoonSection() {
     return (
-        <div className="relative flex min-h-screen w-full flex-col items-center justify-center -mt-8 md:mt-0">
-            <div className="w-full flex flex-col items-center justify-center align-middle gap-3 z-10 md:pt-20">
+        <div className="relative flex min-h-screen w-full flex-col items-center justify-center mt-0">
+            <div className="w-full flex flex-col items-center justify-center align-middle gap-3 z-10">
                 <div className="w-full max-w-[280px] md:max-w-[340px] drop-shadow-xl drop-shadow-black/70 relative">
                     <div className="relative w-full opacity-0">
                         <Image
@@ -91,18 +91,17 @@ function HeroSection() {
                         การผจญภัยครั้งใหม่กำลังรออยู่ แล้วพบกันใน ComCamp ครั้งที่ 37
                     </span>
                 </motion.div>
-                <motion.div
-                    variants={itemVariants}
-                    className="bg-white w-full max-w-[340px] flex items-center justify-center gap-3 h-15 px-4 rounded-xl shadow-lg shadow-black/50 mb-10"
+                <motion.div variants={itemVariants}
+                    className="bg-white w-full max-w-[340px] flex items-center justify-center gap-3 h-15 px-4 rounded-xl shadow-lg shadow-black/50 cursor-pointer mb-10"
                 >
                     <span className="text-black font-bold text-xl leading-15.5 tracking-tight font-zootopia h-full">
                         Coming Soon
                     </span>
                 </motion.div>
             </div>
-            <motion.div variants={bgVariant} className="absolute w-full h-full hidden md:flex flex-col">
+            <motion.div variants={bgVariant} className="absolute w-full overflow-clip h-full hidden md:flex flex-col">
                 <div className="absolute w-full h-full overflow-y-visible overflow-x-clip z-2 flex justify-center items-center align-middle">
-                    <div className="rotate-10 py-20 mt-50 scale-120 overflow-hidden origin-center">
+                    <div className="rotate-10 py-20 scale-120 overflow-hidden origin-center">
                         <InfiniteCarousel/>
                     </div>
                 </div>
@@ -116,4 +115,4 @@ function HeroSection() {
         </div>
     )
 }
-export default HeroSection
+export default ComingSoonSection
