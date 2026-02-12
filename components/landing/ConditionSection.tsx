@@ -78,7 +78,7 @@ function ConditionSection() {
                 {/* --- Condition Card 1 --- */}
                 <motion.div variants={slideInLeft} className="md:h-[180px] w-full xl:w-[75%] backdrop-blur-sm rounded-4xl flex flex-col md:flex-row align-middle items-center self-center md:self-start lg:w-full bg-gradient-to-b from-[#1F456E]/30 to-[#1F456E]/20 border border-white/20 shadow-xl">
                     <motion.div variants={imagePop} className="md:w-[320px] relative">
-                        <Image src="/Landing/Conditions/Condition_1.png" alt="" width={600} height={320} className="object-cover p-[10px] rounded-4xl"/>
+                        <Image src={`${process.env.NEXT_PUBLIC_STATIC_ASSETS_URL}/Landing/Conditions/Condition_1.png`} alt="" width={600} height={320} className="object-cover p-[10px] rounded-4xl" unoptimized/>
                     </motion.div>
                     <div className="text-center text-pretty flex-1 font-semibold text-xl p-5 text-white space-x-1.5">
                         <span>น้อง ๆ ที่กำลังศึกษาอยู่ชั้นมัธยมศึกษาปีที่ 4 - 5</span>
@@ -96,14 +96,14 @@ function ConditionSection() {
                 <motion.div variants={slideInRight} className="md:h-[180px] w-full xl:w-[75%] backdrop-blur-sm rounded-4xl flex flex-col md:flex-row align-middle items-center self-center xl:self-end lg:w-full bg-gradient-to-b from-[#151E3D]/30 to-[#151E3D]/20 border border-white/20 shadow-xl">
                     <div className="text-center flex-1 font-semibold text-xl p-5 order-2 md:order-1 text-white text-pretty">สามารถเข้าพักได้ในระยะเวลาและสถานที่ที่กำหนด<br/>ตลอดโครงการ</div>
                     <motion.div variants={imagePop} className="md:w-[320px] relative order-1 md:order-2">
-                        <Image src="/Landing/Conditions/Condition_2.png" alt="" width={600} height={320} className="object-cover p-[10px] rounded-4xl"/>
+                        <Image src={`${process.env.NEXT_PUBLIC_STATIC_ASSETS_URL}/Landing/Conditions/Condition_2.png`} alt="" width={600} height={320} className="object-cover p-[10px] rounded-4xl" unoptimized/>
                     </motion.div>
                 </motion.div>
 
                 {/* --- Condition Card 3 --- */}
                 <motion.div variants={slideInLeft} className="md:h-[180px] w-full xl:w-[75%] backdrop-blur-sm rounded-4xl flex flex-col md:flex-row align-middle items-center self-center md:self-start xl:mx-30 lg:w-full bg-gradient-to-b from-[#151E3D]/30 to-[#151E3D]/20 border border-white/20 shadow-xl">
                     <motion.div variants={imagePop} className="md:w-[320px] relative">
-                        <Image src="/Landing/Conditions/Condition_3.png" alt="" width={600} height={320} className="object-cover p-[10px] rounded-4xl"/>
+                        <Image src={`${process.env.NEXT_PUBLIC_STATIC_ASSETS_URL}/Landing/Conditions/Condition_3.png`} alt="" width={600} height={320} className="object-cover p-[10px] rounded-4xl" unoptimized/>
                     </motion.div>
                     <div className="text-center flex-1 font-semibold text-xl p-5 text-white text-pretty">มีความสนใจในด้านคอมพิวเตอร์และภาควิชาวิศวกรรมคอมพิวเตอร์<br/>โดยไม่จำเป็นต้องมีพื้นฐานการเขียนโปรแกรม</div>
                 </motion.div>
@@ -112,7 +112,7 @@ function ConditionSection() {
                 <motion.div variants={slideInRight} className="md:h-[180px] w-full xl:w-[75%] backdrop-blur-sm rounded-4xl flex flex-col md:flex-row align-middle items-center self-center xl:self-end xl:mx-30 lg:w-full bg-gradient-to-b from-[#4C3B33]/30 to-[#4C3B33]/20 border border-white/20 shadow-xl">
                     <div className="text-center flex-1 font-semibold text-xl p-5 order-2 md:order-1 text-white text-pretty">ผู้ปกครองอนุญาตและยินยอมให้นักเรียนเข้าร่วมโครงการ</div>
                     <motion.div variants={imagePop} className="md:w-[320px] relative order-1 md:order-2">
-                        <Image src="/Landing/Conditions/Condition_4.png" alt="" width={600} height={320} className="object-cover p-[10px] rounded-4xl"/>
+                        <Image src={`${process.env.NEXT_PUBLIC_STATIC_ASSETS_URL}/Landing/Conditions/Condition_4.png`} alt="" width={600} height={320} className="object-cover p-[10px] rounded-4xl" unoptimized/>
                     </motion.div>
                 </motion.div>
 

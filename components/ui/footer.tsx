@@ -42,10 +42,11 @@ function Footer() {
             <div className="w-full max-w-[1600px] bg-theme-primary-darken relative ">
                 <div className="h-50 w-50 absolute bottom-0 right-0 hidden md:block">
                     <Image
-                        src="/gooseNick.png"
+                        src={`${process.env.NEXT_PUBLIC_STATIC_ASSETS_URL}/gooseNick.png`}
                         alt="Comcamp 37 Logo"
                         fill
-                        priority
+                        sizes="auto"
+                        unoptimized
                     />
                 </div>
                 <div className="w-full text-center py-3 md:px-20 text-sm leading-5 text-slate-500 flex flex-col md:flex-row gap-x-3 gap-y-10">
