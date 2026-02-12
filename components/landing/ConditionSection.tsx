@@ -56,7 +56,7 @@ function ConditionSection() {
             viewport={{ once: true, amount: 0.1 }}
             variants={containerVariants}
         >
-            <div className="top-0 flex flex-col justify-center align-middle items-center w-full max-w-[1600px] h-full p-3 md:p-20 z-10 gap-5">
+            <div className="overflow-clip top-0 flex flex-col justify-center align-middle items-center w-full max-w-[1600px] h-full p-3 md:p-20 z-10 gap-5">
 
                 <motion.div
                     variants={{ hidden: { y: -20, opacity: 0 }, visible: { y: 0, opacity: 1 } }}
